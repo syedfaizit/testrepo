@@ -126,10 +126,4 @@ def start_game():
         continue_adventure = input("Do you want to continue exploring? (y/n): ")
         if continue_adventure.lower() != "y":
             print(f"\n{player.name} decides to leave the dungeon. The adventure ends here.\n")
-            break
-
-    if not player.is_alive():
-        print(f"{player.name} has been defeated. Game Over.")
-
-# Start the game
-start_game()
+            
